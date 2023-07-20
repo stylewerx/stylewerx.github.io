@@ -1,25 +1,8 @@
-<?
-if (stristr($_SERVER['HTTP_ACCEPT'],'application/xhtml+xml')) {
-	$contenttype = 'application/xhtml+xml; charset=UTF-8';
-	$langdef = 'xml:lang';
-	$xhtmlversion = 'XHTML 1.1';
-	header('Content-Type: '.$contenttype);
-	echo "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n";
-	echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\" \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\">\n";
-}
-else {
-	$contenttype = 'text/html; charset=UTF-8';
-	$langdef = 'lang';
-	$xhtmlversion = 'XHTML 1.0 Strict';
-	header('Content-Type: '.$contenttype);
-	echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n";
-}
-?>
-
-<html xmlns="http://www.w3.org/1999/xhtml" <?=$langdef?>="de">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
 
 <head>
-	<meta http-equiv="Content-Type" content="<?=$contenttype?>" />
+	<meta http-equiv="Content-Type" content="text/html" />
 	<meta name="robots" content="index, follow" />
 	<meta name="content-language" content="de" />
 	<title>stylewerx.de | 2001 - 2008</title>
